@@ -1,0 +1,43 @@
+using System;
+namespace myworld
+{
+    class Program
+    {
+        static void Main(string[]args)
+        {
+
+            // Customizations:
+            Console.Title = "AODP";
+            Console.WindowHeight = 30;
+            Console.WindowWidth = 45;
+
+            // Chatbox:
+            Console.WriteLine("Hello Sir, How are you!");
+            Console.ReadLine();
+            Console.WriteLine("What is your name? Sir...");
+            string usrName = Console.ReadLine();
+
+            // StatusBox: 
+            string passkey = "Vege1234";
+            Console.WriteLine("Okay"+ usrName +"! Please Enter Your Password to get Access.");
+            string crschk = Console.ReadLine();
+
+            if (passkey == crschk)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Password Matched...");
+                Console.WriteLine("Access Completed");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Password Mismatched...");
+                Console.WriteLine("Failed to get access");
+            }
+          
+            // End of Program: 
+            Console.ReadKey();
+
+        }
+    }
+}

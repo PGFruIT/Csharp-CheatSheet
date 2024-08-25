@@ -1,0 +1,64 @@
+// Calculate the average of three numbers.
+using System;
+namespace MyWorld
+{
+    class CBT
+    {
+        static void Main(string[]args)
+        {
+
+            // Customizations:
+            Console.Title = "Calculator";
+            Console.WindowHeight = 35;
+            Console.WindowWidth = 80;
+
+
+            // ChatBox:
+            Console.WriteLine("Hello Sir, Would you like to tell your name... ");
+            string usrName = Console.ReadLine();
+
+            Console.WriteLine("Ok "+usrName+ " Lets get started.");
+            Console.WriteLine("\n-So to calculate average of three numbers, we need to add all the numbers.\n");
+
+
+
+            // Declaration:
+            int num1;
+            int num2;
+            int num3;
+
+
+            // Inputing Values:
+            Console.Write("Enter First Number: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Second Number: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Third Number: ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+            
+            // Result:
+            int sum = num1 + num2 + num3;
+            double average = sum / 3.0;  // Use 3.0 to ensure floating-point division
+
+            Console.WriteLine($"Hence, the average of the entered values is: {average}");
+
+
+            // Response:
+            Console.WriteLine("Please write your feedback!");
+            Console.Write("Good     Bad     Average  =   ");
+
+
+            // Ending:
+            Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\tThank You for writing your feedback!\n ");
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Now, You can press ENTER to [EXIT] ");
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// Calculate the average of three numbers.
+using System;
+namespace MyWorld
+{
+    class MPK
+    {
+        static void Main(string[] args)
+        {
+            // Customizations:
+            Console.Title = "Average Calculator";
+            Console.WindowHeight = 35;
+            Console.WindowWidth = 50;
+
+            // Greetings:
+            Console.WriteLine("Hi Sir, Would you like to tell your name");
+            
+            string usrName = Console.ReadLine();
+
+            Console.WriteLine("Ok " + usrName + " Lets get started.");
+            Console.WriteLine("So to calculate average of three numbers, we need to add all the numbers.");
+
+            // Declaration:
+            int num1;
+            int num2;
+            int num3;
+            Console.Write("Enter the first number: ");
+            num1 = Convert.ToInt32(Console.ReadLine);
+
+            Console.Write("Enter the first number: ");
+            num2 = Convert.ToInt32(Console.ReadLine);
+
+            Console.Write("Enter the first number: ");
+            num3 = Convert.ToInt32(Console.ReadLine);
+
+            // Ending:
+            int result;
+            Console.WriteLine(num1 + num2 + num3);
+        }
+    }
+}
